@@ -32,9 +32,12 @@ Route::get('/Aya', function () {
 Route::get('/Aya', function () {
     return view('Aya');
 });
-Route::post('create', function(){
-	return "hiiii"
+// Route::post('create', function(){
+// 	return "hiiii"
+// });
+
+Route::get('/ajax',function(){
+   return view('message');
 });
-
-
+Route::post('/getmsg','AjaxController@index');
 ?>
