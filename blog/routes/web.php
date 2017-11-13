@@ -36,6 +36,8 @@ Route::get('/Aya', function () {
 // 	return "hiiii"
 // });
 
+
+
 Route::get('/ajax',function(){
    return view('message');
 });
