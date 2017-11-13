@@ -1,6 +1,4 @@
-<?php 
-    echo "Hello World /n ";
-    $name = "aya";
-    echo "     My weather API:423047100cc422f12720b052f61c438a";
-    echo $name;
-?> 
+<form action="create" method="POST">
+    <input type="text"  >
+   <!-- <input type="hidden" name="_token" value="{{ csrf_token() }}"> -->
+</form>

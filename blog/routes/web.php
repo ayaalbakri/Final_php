@@ -32,3 +32,9 @@ Route::get('/Aya', function () {
 Route::get('/Aya', function () {
     return view('Aya');
 });
+Route::post('create', function(){
+	return "hiiii"
+});
+
+
+?>
