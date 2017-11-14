@@ -61,7 +61,7 @@ span.psw {
     }
 }
 </style>
-      <title>Ajax Example</title>
+      <title>Weather</title>
        <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -102,10 +102,11 @@ span.psw {
           
 
         console.log(x)
-  alert( "Handler for .submit() called." );
+  alert( "Done" );
     $.ajax({
                type:'get',
                url:'http://api.openweathermap.org/data/2.5/weather?q='+x+'&units=metric&appid=423047100cc422f12720b052f61c438a',
+               //http://api.openweathermap.org/data/2.5/forecast?q=Amman&APPID=1d542eac83eaad6d439c47ba406ba70e
               // data:'_token = <?php echo csrf_token() ?>',
                success:function(data){
                 console.log(data.main)
