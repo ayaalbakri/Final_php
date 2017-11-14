@@ -14,32 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/hello',function(){
-    return 'New Rout!';
-});
-
-
-
-Route::get('hello', 'Hello@index');
-
-Route::get('/hello/{name}', 'Hello@show');
-
-Route::get('/Aya', function () {
-    return view('Aya');
-});
-
-Route::get('/Aya', function () {
-    return view('Aya');
-});
-// Route::post('create', function(){
-// 	return "hiiii"
-// });
-
-
-
-Route::get('/ajax',function(){
-   return view('message');
-});
-Route::post('/getmsg','AjaxController@index');
-?>
